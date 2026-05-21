@@ -99,7 +99,7 @@ const coalesceVisualCards = makeCards([
 ]);
 
 const zentroaVisualCards = makeCards([
-  ["Foundation & Infrastructure Works", "Site preparation, drainage routing and reinforced foundation activities", "Groundworks", "from-orange-200 via-orange-700 to-stone-950", "/portfolio_assets/marketing suite in cons.png"],
+  ["Foundation & Infrastructure Works", "Welding Works", "Site Progress", "from-orange-200 via-orange-700 to-stone-950", "/portfolio_assets/marketing suite in cons.png"],
   ["Marketing / Prototype Building", "Completed architectural showcase unit used for client presentation", "Show Unit", "from-stone-100 via-orange-500 to-slate-950", "/portfolio_assets/marketing suite completed.png"],
   ["Estate Construction Progress", "Multi-building residential development under simultaneous construction phases", "Aerial Progress", "from-amber-100 via-yellow-700 to-stone-950", "/portfolio_assets/zen overview 1.png"],
 ]);
