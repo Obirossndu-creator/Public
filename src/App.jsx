@@ -641,9 +641,9 @@ export default function PortfolioWebsite() {
             <h2 className="mt-3 text-4xl font-bold">{text.experienceTitle}</h2>
             <div className="mt-10 grid gap-6 md:grid-cols-3">
               {[
-                ["Rolling Bricks LTD", "Project Manager / Construction Coordination", "Coordinated resources, quality control, site workflows, documentation and project delivery across residential housing developments."],
-                ["Project Coalesce", "Residential development", "Managed construction progress from carcass stage to handover, including coordination, QA/QC and delivery tracking."],
-                ["Project Zentroa", "Residential & housing development", "Supported scheduling, contractor coordination, payment authorization, quality assurance and progress tracking across project phases."],
+                ["Rolling Bricks LTD  2021 - 2024", "Project Manager / Construction Coordination", "Coordinated resources, quality control, site workflows, documentation and project delivery across residential housing developments."],
+                ["PROJECTS: Project Coalesce", "Residential development", "Managed construction progress from carcass stage to handover, including coordination, QA/QC and delivery tracking."],
+                ["PROJECTS: Project Zentroa", "Residential & housing development", "Cordination of site operations, scheduling, contractor coordination, payment authorization, quality control and progress tracking across project phases."],
               ].map(([title, subtitle, body]) => (
                 <Card key={title} className="rounded-3xl border-white/10 bg-white/[0.06]">
                   <CardContent className="p-6">
