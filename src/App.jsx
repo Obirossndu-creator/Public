@@ -94,8 +94,8 @@ const masonryPerformanceVisualCards = makeCards([
 const coalesceVisualCards = makeCards([
   ["Construction Phase", "Scaffolded residential units during active construction and finishing works", "Site Progress", "from-stone-300 via-orange-700 to-slate-950", "/portfolio_assets/duplex in cons.png"],
   ["Completed Duplex Facade", "Modern residential elevation with balconies and architectural detailing", "Completed Works", "from-amber-100 via-orange-500 to-slate-900", "/portfolio_assets/duplex finished.png"],
-  ["Interior Finishing", "Completed wardrobe installation and interior finishing coordination", "Interior", "from-neutral-100 via-yellow-700 to-slate-950", "/portfolio_assets/row house finish.png"],
-  ["Aerial Estate Overview", "Multi-unit residential development coordination and site planning", "Masterplan", "from-orange-100 via-amber-700 to-slate-950", "/portfolio_assets/row house finish beta 2.png"],
+  ["Completed Row Houses Facade", "Modern residential elevation with balconies and architectural detailing", "Completed Works", "from-neutral-100 via-yellow-700 to-slate-950", "/portfolio_assets/row house finish.png"],
+  ["Completed Row Houses Facade", "Modern residential elevation with balconies and architectural detailing", "Completed Works", "from-orange-100 via-amber-700 to-slate-950", "/portfolio_assets/row house finish beta 2.png"],
 ]);
 
 const zentroaVisualCards = makeCards([
