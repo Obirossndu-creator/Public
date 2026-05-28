@@ -124,7 +124,7 @@ const projects = [
   },
   {
     title: "Inclusive Learning Hub",
-    category: "BIM Automation",
+    category: "BIM + Structural",
     type: "Advanced BIM Project",
     tools: ["Revit", "Dynamo", "Desite MD", "IFC"],
     summary:
@@ -206,7 +206,7 @@ const projects = [
   },
   {
     title: "Multi-Hazard Risk Assessment — Nigeria & Global Events",
-    category: "Risk + Research",
+    category: "GIS + Risk",
     type: "Natural Hazard Assessment",
     tools: ["QGIS", "Excel", "Hazard Databases", "Literature Review"],
     summary:
@@ -289,12 +289,12 @@ const competencies = [
   },
   {
     icon: HardHat,
-    title: "Construction & Project Delivery",
+    title: "Construction & Project Management",
     items: ["Construction coordination", "Project scheduling", "Quality control", "Resource coordination", "Quantity tracking", "Technical documentation"],
   },
 ];
 
-const filters = ["All", "BIM + Structural", "BIM Automation", "Structural + Seismic", "GIS + Risk", "Risk + Research", "Construction"];
+const filters = ["All", "BIM + Structural", "Structural + Seismic", "GIS + Risk", "Construction"];
 const softwareTools = ["Revit", "Dynamo", "Robot Structural Analysis", "SAP2000", "Tremuri / 3Muri", "Desite MD", "Autodesk Construction Cloud", "Navisworks", "QGIS", "MATLAB", "MS Project", "Excel", "AutoCAD", "Idea Statica"];
 
 const uiText = {
@@ -306,7 +306,7 @@ const uiText = {
     navContact: "Contact",
     heroBadge: "BIM Engineer • Structural Engineering • Construction • Risk Analysis",
     heroTitle: "Structural Engineering, BIM, Management for Coordinated, Resilient Built Environments.",
-    heroText: "Multidisciplinary engineering graduate student with practical construction management experience and project work across BIM automation, structural analysis, seismic assessment, GIS-based risk analysis and digital project delivery.",
+    heroText: "Multidisciplinary engineering graduate student with practical construction management experience and project work across BIM automation, structural analysis, seismic assessment, GIS-based risk analysis and project management.",
     viewProjects: "View Projects",
     contact: "Contact",
     aboutLabel: "About",
@@ -488,7 +488,7 @@ function ProfileCard({ text }) {
             <h3 className="mt-4 text-3xl font-bold text-white">Obinna Rosato Ndupuechi</h3>
             <p className="mt-2 max-w-md text-sm leading-6 text-slate-200">{text.profileText}</p>
             <div className="mt-6 grid gap-3">
-              {["BIM Coordination", "Parametric + Dynamo Workflows", "Structural & Seismic Analysis", "GIS + Hazard Risk Mapping", "Construction Project Delivery"].map((item) => (
+              {["BIM Coordination", "Parametric + Dynamo Workflows", "Structural & Seismic Analysis", "GIS + Hazard Risk Mapping", "Construction Project Management"].map((item) => (
                 <div key={item} className="rounded-2xl border border-white/10 bg-white/5 p-3 text-sm text-slate-200">{item}</div>
               ))}
             </div>
