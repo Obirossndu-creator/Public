@@ -105,6 +105,65 @@ const zentroaVisualCards = makeCards([
 ]);
 
 const projects = [
+    {
+    title: "Dynamo → Revit Structural Frame Automation",
+    category: "BIM + Structural",
+    type: "Parametric BIM Automation",
+    tools: ["Dynamo", "Revit"],
+    summary:
+      "Parametric structural frame automation linking bay and floor inputs to geometry generation in Dynamo and beam and column placement in Revit.",
+    highlights: [
+      "Controlled frame geometry through bay counts, spacing and floor inputs",
+      "Generated beam and column points and curves automatically in Dynamo",
+      "Placed structural members using assigned Revit family types and levels",
+    ],
+    accent: "from-slate-900 to-cyan-800",
+    visualCards: makeCards([
+      [
+        "Parametric Geometry in Dynamo",
+        "Bay counts, spacing and floor inputs drive automated beam and column point and curve generation.",
+        "Dynamo",
+        "from-slate-200 via-cyan-600 to-slate-950",
+        "/portfolio_assets/dynamo-frame.png",
+      ],
+      [
+        "Automated Structural Placement in Revit",
+        "Dynamo-generated curves place beams and columns using assigned Revit family types and levels.",
+        "Revit Structural Model",
+        "from-indigo-100 via-blue-700 to-slate-950",
+        "/portfolio_assets/revit-frame.png",
+      ],
+    ]),
+    translations: {
+      de: {
+        title: "Dynamo → Revit: Tragwerksautomatisierung",
+        type: "Parametrische BIM-Automatisierung",
+        summary:
+          "Parametrischer Workflow vom Achsraster und den Geschosseingaben über die Geometrieerzeugung in Dynamo bis zur automatischen Platzierung von Trägern und Stützen in Revit.",
+        highlights: [
+          "Rahmengeometrie über Achsanzahl, Achsabstände und Geschosseingaben gesteuert",
+          "Punkte und Kurven für Träger und Stützen automatisch in Dynamo erzeugt",
+          "Tragwerkselemente mit zugewiesenen Revit-Familientypen und Ebenen platziert",
+        ],
+        visualCards: makeCards([
+          [
+            "Parametrische Geometrie in Dynamo",
+            "Achsanzahl, Achsabstände und Geschosseingaben steuern die automatische Erzeugung von Punkten und Kurven für Träger und Stützen.",
+            "Dynamo",
+            "from-slate-200 via-cyan-600 to-slate-950",
+            "/portfolio_assets/dynamo-frame.png",
+          ],
+          [
+            "Automatische Tragwerksplatzierung in Revit",
+            "Dynamo-Kurven steuern die Platzierung von Trägern und Stützen mit zugewiesenen Revit-Familientypen und Ebenen.",
+            "Revit-Tragwerksmodell",
+            "from-indigo-100 via-blue-700 to-slate-950",
+            "/portfolio_assets/revit-frame.png",
+          ],
+        ]),
+      },
+    },
+  },
   {
     title: "Future Mobility Hub — Weimar Bus Station",
     category: "BIM + Structural",
@@ -503,7 +562,14 @@ export default function PortfolioWebsite() {
   const [active, setActive] = useState("All");
   const [lang, setLang] = useState("en");
   const text = uiText[lang];
-  const filtered = useMemo(() => getFilteredProjects(active), [active]);
+  const filtered = useMemo(
+  () =>
+    getFilteredProjects(active).map((project) => ({
+      ...project,
+      ...project.translations?.[lang],
+    })),
+  [active, lang],
+);
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
