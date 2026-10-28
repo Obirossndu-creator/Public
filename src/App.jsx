@@ -106,6 +106,67 @@ const zentroaVisualCards = makeCards([
 
 const projects = [
     {
+    title: "Parametric Portal Frame Automation",
+    category: "BIM + Structural",
+    type: "Dynamo-to-Revit Automation",
+    tools: ["Dynamo", "Revit"],
+    summary:
+      "Parametric portal-frame workflow generating repeated frames, purlins, bracing and foundation geometry, with coordinated element placement in Revit.",
+    highlights: [
+      "Controlled structural geometry through parametric inputs",
+      "Generated repeated frames, purlins and bracing in Dynamo",
+      "Organised geometry for Revit element placement",
+    ],
+    accent: "from-slate-900 to-cyan-800",
+    visualCards: makeCards([
+      [
+        "Portal Frame Generation in Dynamo",
+        "Input-driven geometry for rafters, columns, purlins, roof and vertical bracing, and foundations.",
+        "Parametric Structural Modelling",
+        "from-slate-200 via-cyan-600 to-slate-950",
+        "/portfolio_assets/dynamo-portal-frame.png",
+      ],
+    ]),
+    videos: [
+      {
+        title: "Portal frame automation demonstration",
+        note: "Dynamo workflow demonstration for parametric structural modelling.",
+        src: "/portfolio_assets/dynamo-portal-frame.mp4",
+        type: "video/mp4",
+      },
+    ],
+    translations: {
+      de: {
+        title: "Parametrische Portalrahmen-Automatisierung",
+        type: "Dynamo-Revit-Automatisierung",
+        summary:
+          "Parametrischer Workflow zur Erzeugung wiederholter Portalrahmen, Pfetten, Verbände und Fundamentgeometrien mit koordinierter Elementplatzierung in Revit.",
+        highlights: [
+          "Tragwerksgeometrie über parametrische Eingaben gesteuert",
+          "Wiederholte Rahmen, Pfetten und Verbände in Dynamo erzeugt",
+          "Geometrie für die Elementplatzierung in Revit strukturiert",
+        ],
+        visualCards: makeCards([
+          [
+            "Portalrahmen-Erzeugung in Dynamo",
+            "Parametrische Geometrie für Rahmenriegel, Stützen, Pfetten, Dach- und Vertikalverbände sowie Fundamente.",
+            "Parametrische Tragwerksmodellierung",
+            "from-slate-200 via-cyan-600 to-slate-950",
+            "/portfolio_assets/dynamo-portal-frame.png",
+          ],
+        ]),
+        videos: [
+          {
+            title: "Demonstration der Portalrahmen-Automatisierung",
+            note: "Dynamo-Workflow zur parametrischen Tragwerksmodellierung.",
+            src: "/portfolio_assets/dynamo-portal-frame.mp4",
+            type: "video/mp4",
+          },
+        ],
+      },
+    },
+  },
+    {
     title: "Dynamo → Revit Structural Frame Automation",
     category: "BIM + Structural",
     type: "Parametric BIM Automation",
