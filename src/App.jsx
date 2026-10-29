@@ -105,6 +105,67 @@ const zentroaVisualCards = makeCards([
 ]);
 
 const projects = [
+{
+  "title": "Parametric Bridge Deck Modelling",
+  "category": "BIM + Structural",
+  "type": "Dynamo Structural Geometry",
+  "tools": [
+    "Dynamo"
+  ],
+  "summary": "Parametric bridge-deck geometry workflow in Dynamo, coordinating chord profiles, repeated diagonal members, deck supports, horizontal bracing and deck panels.",
+  "highlights": [
+    "Defined input-driven chord geometry and segment calculations",
+    "Generated and repeated diagonal members along the bridge",
+    "Coordinated deck supports, bottom-chord bracing and deck panels"
+  ],
+  "accent": "from-slate-900 to-cyan-800",
+  "visualCards": [
+    {
+      "title": "Parametric Bridge Deck in Dynamo",
+      "subtitle": "Parametric generation of top and bottom chords, diagonals, deck supports, horizontal bracing and deck panels.",
+      "tag": "Parametric Geometry",
+      "gradient": "from-slate-200 via-cyan-600 to-slate-950",
+      "image": "/portfolio_assets/dynamo-bridge-deck.png"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Bridge deck modelling demonstration",
+      "note": "Dynamo workflow for parametric bridge geometry generation.",
+      "src": "/portfolio_assets/dynamo-bridge-deck.mp4",
+      "type": "video/mp4"
+    }
+  ],
+  "translations": {
+    "de": {
+      "title": "Parametrische Modellierung eines Brückenüberbaus",
+      "type": "Tragwerksgeometrie mit Dynamo",
+      "summary": "Parametrischer Dynamo-Workflow für einen Brückenüberbau mit abgestimmten Gurtverläufen, wiederholten Diagonalen, Querträgern, Horizontalverbänden und Fahrbahnelementen.",
+      "highlights": [
+        "Gurtgeometrie und Segmentberechnungen über parametrische Eingaben gesteuert",
+        "Diagonalen entlang der Brücke erzeugt und vervielfältigt",
+        "Querträger, Untergurtverbände und Fahrbahnelemente geometrisch abgestimmt"
+      ],
+      "visualCards": [
+        {
+          "title": "Parametrischer Brückenüberbau in Dynamo",
+          "subtitle": "Parametrische Erzeugung von Ober- und Untergurten, Diagonalen, Querträgern, Horizontalverbänden und Fahrbahnelementen.",
+          "tag": "Parametrische Geometrie",
+          "gradient": "from-slate-200 via-cyan-600 to-slate-950",
+          "image": "/portfolio_assets/dynamo-bridge-deck.png"
+        }
+      ],
+      "videos": [
+        {
+          "title": "Demonstration der Brückenmodellierung",
+          "note": "Dynamo-Workflow zur parametrischen Erzeugung der Brückengeometrie.",
+          "src": "/portfolio_assets/dynamo-bridge-deck.mp4",
+          "type": "video/mp4"
+        }
+      ]
+    }
+  }
+},
     {
     title: "Parametric Portal Frame Automation",
     category: "BIM + Structural",
